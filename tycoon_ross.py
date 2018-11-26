@@ -142,6 +142,7 @@ trucks=[truck1,truck2]
 pausetime=1
 buy_factor=1
 numberOfIterations=4500
+bMonitoring=True
 
 # initial load of goods
 for t in trucks:
@@ -205,4 +206,4 @@ for i in range(1,numberOfIterations):
   customers_buy_goods()
   print('Customers bought')
   print_points()
-  publish_points()
+  if bMonitoring: publish_points()
